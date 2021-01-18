@@ -16,11 +16,19 @@ body {
     padding: 0 1vw 2vh;
 }
 
+button,
+input {
+    border: none;
+    padding: 5px;
+    font-size: 2vw;
+}
+
 
 /*Navbar*/
 
 .navbar {
     justify-content: space-between;
+    padding-top: 5vh;
 }
 
 h1 {
@@ -31,9 +39,6 @@ h1 {
 button {
     background-color: transparent;
     color: #fff;
-    font-size: 2vw;
-    padding: 5px;
-    border: none;
     border-bottom: 1px solid #fff;
     outline: none;
 }
@@ -45,6 +50,34 @@ img {
 
 
 /*Input fields*/
+
+.searchBar {
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    color: #fff;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+input {
+    margin-top: 5vh;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.inputValue {
+    outline: none;
+}
+
+.submit {
+    color: #fff;
+    background-color: rgb(126, 126, 126);
+}
 
 
 /* Default weather*/
