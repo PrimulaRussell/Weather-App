@@ -9,8 +9,39 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+.navbar,
+.searchBar {
+    background-color: #68b3f5;
+    display: flex;
+    padding: 0 1vw 2vh;
+}
+
 
 /*Navbar*/
+
+.navbar {
+    justify-content: space-between;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3.5vw;
+}
+
+button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 2vw;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+
+img {
+    width: 10%;
+    height: auto;
+}
 
 
 /*Input fields*/
