@@ -63,6 +63,7 @@ label {
     color: #fff;
     font-size: 4vw;
     font-weight: 700;
+    display: block;
 }
 
 input {
@@ -81,7 +82,30 @@ input {
 }
 
 
+/* Weather*/
+
+.display {
+    height: 40vh
+}
+
+
 /* Default weather*/
+
+.notSearched {
+    text-align: center;
+}
+
+.notSearched span {
+    color: rgb(126, 126, 126);
+    margin-top: 10vh;
+    display: block;
+    font-size: 140%;
+}
+
+.notSearched img {
+    margin-top: 10vh;
+    width: 20%;
+}
 
 
 /*Searched weather*/
