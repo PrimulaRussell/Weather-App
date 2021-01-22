@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Open Weather API</title>
 </head>
+<!-- Nav Bar-->
 
 <body>
     <div class=navbar>
@@ -21,7 +22,7 @@
         </button>
     </div>
 
-
+    <!-- Input Field-->
     <div class="searchBar">
         <div class="inputField">
             <label for="inputValue">Where would you like to search?</label>
@@ -30,13 +31,13 @@
         </div>
     </div>
 
-
+    <!-- Default Weather Display-->
     <div class="display">
         <div class="notSearched">
             <span>Nothing here yet, try searching somewhere.</span>
             <img src="/images/smiling-sun.gif" alt="Sun">
         </div>
-
+        <!-- Searched Weather Display-->
         <div class="searched">
             <div class="searchDisplay">
                 <div class="city"></div>
@@ -49,6 +50,8 @@
             </div>
         </div>
     </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='/js/config.js'></script>
     <script src="/js/main.js"></script>

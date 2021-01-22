@@ -7,7 +7,11 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    color: #fff
 }
+
+
+/* Repeating styles*/
 
 .navbar,
 .searchBar {
@@ -16,11 +20,55 @@ body {
     padding: 0 1vw 2vh;
 }
 
+.stats,
+button,
+input {
+    font-size: 2vw;
+}
+
 button,
 input {
     border: none;
     padding: 5px;
-    font-size: 2vw;
+}
+
+button,
+.inputValue {
+    outline: none;
+}
+
+h1,
+.city {
+    font-size: 3.5vw;
+}
+
+.city,
+.temp,
+.stats {
+    position: relative;
+}
+
+.bold,
+.city,
+.temp,
+.stats {
+    font-weight: bolder;
+}
+
+.city,
+.temp {
+    right: 35%;
+}
+
+.stats span,
+label,
+.notSearched span {
+    display: block;
+}
+
+.display,
+.searchBar {
+    height: 50vh;
 }
 
 
@@ -31,21 +79,10 @@ input {
     padding-top: 5vh;
 }
 
-h1 {
-    color: #fff;
-    font-size: 3.5vw;
-}
-
 button {
     background-color: transparent;
-    color: #fff;
     border-bottom: 1px solid #fff;
-    outline: none;
     margin-right: 2vw;
-}
-
-.bold {
-    font-weight: bolder;
 }
 
 img {
@@ -53,61 +90,52 @@ img {
     height: auto;
 }
 
+.searchBar,
+input,
+.notSearched,
+.searchDisplay {
+    text-align: center;
+}
+
+.notSearched span,
+.notSearched img {
+    margin-top: 10vh;
+}
+
 
 /*Input fields*/
 
 .searchBar {
-    height: 50vh;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 label {
-    color: #fff;
     font-size: 4vw;
     font-weight: 700;
-    display: block;
 }
 
 input {
     margin-top: 5vh;
-    text-align: center;
     border-radius: 3px;
 }
 
-.inputValue {
-    outline: none;
-}
-
 .submit {
-    color: #fff;
     background-color: rgb(126, 126, 126);
 }
 
 
 /* Weather*/
 
-.display {
-    height: 50vh;
-}
-
 
 /* Default weather*/
 
-.notSearched {
-    text-align: center;
-}
-
 .notSearched span {
     color: rgb(126, 126, 126);
-    margin-top: 10vh;
-    display: block;
     font-size: 140%;
 }
 
 .notSearched img {
-    margin-top: 10vh;
     width: 20%;
 }
 
@@ -115,7 +143,6 @@ input {
 /*Searched weather*/
 
 .searched {
-    color: white;
     height: 100%;
     display: none;
 }
@@ -123,37 +150,22 @@ input {
 .searchDisplay {
     background-color: rgba(104, 179, 245, 0.61);
     margin: 2% 20%;
-    text-align: center;
     height: 90%;
     padding: .5% 2%;
     border-radius: 10px;
 }
 
-.city {
-    position: relative;
-    right: 35%;
-    font-size: 3.5vw;
-    font-weight: bolder;
-}
-
 .temp {
-    position: relative;
-    right: 35%;
     top: 10%;
     font-size: 10vw;
-    font-weight: bolder;
 }
 
 .stats {
-    font-size: 2vw;
-    position: relative;
     bottom: 70%;
-    font-weight: bolder;
     left: 20%;
 }
 
 .stats span {
-    display: block;
     padding: 10px;
 }
 
@@ -167,10 +179,21 @@ input {
 /* Portrait */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    /* Navbar */
-    h1 {
+    /*Repeating Styles*/
+    h1,
+    .stats {
         font-size: 20px;
     }
+    .inputValue,
+    .submit {
+        font-size: 15px;
+        height: 30px;
+    }
+    .notSearched span,
+    .notSearched img {
+        margin-top: 30px;
+    }
+    /* Navbar */
     img {
         width: 20%;
     }
@@ -189,25 +212,17 @@ input {
         margin-top: 3vh;
     }
     .inputValue {
-        font-size: 15px;
         width: 200px;
-        height: 30px;
     }
     .submit {
-        font-size: 15px;
         width: 80px;
-        height: 30px;
     }
     /*Weather*/
     .display {
         height: 20vh;
     }
     /*Not Searched*/
-    .notSearched span {
-        margin-top: 30px;
-    }
     .notSearched img {
-        margin-top: 30px;
         width: 50%;
     }
     /*Searched*/
@@ -225,7 +240,6 @@ input {
         font-size: 80px;
     }
     .stats {
-        font-size: 20px;
         bottom: 55%;
         left: 25%;
     }
