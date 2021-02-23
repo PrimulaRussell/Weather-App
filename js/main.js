@@ -13,20 +13,6 @@ var cel = document.querySelector(".cel");
 //links to private api key//
 var apiKey = config.WEATHER_API_KEY;
 
-//Changes units from Fahrenheit  to celcius when clicked//
-
-//Coming back to this when I have learned React//
-/*
-$("button").click(function() {
-    $(".unit").toggleClass("bold");
-
-    if ($(".cel").hasClass("bold")) {
-        (parseInt(temp.innerHTML) - 30) * 5 / 9
-    }
-});
-*/
-
-
 
 //fetches weather data when submit button is clicked//
 
