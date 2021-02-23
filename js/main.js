@@ -17,7 +17,7 @@ var apiKey = config.WEATHER_API_KEY;
 //fetches weather data when submit button is clicked//
 
 submit.addEventListener("click", function() {
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + inputValue.value + "&units=imperial&APPID=" + apiKey)
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputValue.value + "&units=imperial&APPID=" + apiKey)
         .then(response => response.json())
         .then(changeDisplay())
 
