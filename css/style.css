@@ -75,10 +75,17 @@ label,
 /*Navbar*/
 
 .navbar {
-    justify-content: space-between;
     padding-top: 5vh;
 }
 
+    h1 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
 button {
     background-color: transparent;
     border-bottom: 1px solid #fff;
