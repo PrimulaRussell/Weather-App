@@ -185,7 +185,7 @@ input {
 
 /* Portrait */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
     /*Repeating Styles*/
     h1,
     .stats {
@@ -255,7 +255,7 @@ input {
 
 /* Landscape */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
     /*Searched*/
     .searchDisplay {
         margin: 5% 5%;
