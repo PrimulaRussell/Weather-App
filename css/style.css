@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    color: #fff
+    color: #fff;
 }
 
 
@@ -42,25 +42,19 @@ h1,
     font-size: 3.5vw;
 }
 
-.city,
-.temp,
+.main-info,
 .stats {
     position: relative;
 }
 
-.bold,
-.city,
-.temp,
+.main-info,
 .stats {
     font-weight: bolder;
 }
 
-.city,
-.temp {
-    right: 35%;
-}
 
-.stats span,
+.main-info,
+.weatherStats,
 label,
 .notSearched span {
     display: block;
@@ -70,33 +64,6 @@ label,
 .searchBar {
     height: 50vh;
 }
-
-
-/*Navbar*/
-
-.navbar {
-    padding-top: 5vh;
-}
-
-    h1 {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-button {
-    background-color: transparent;
-    border-bottom: 1px solid #fff;
-    margin-right: 2vw;
-}
-
-img {
-    width: 10%;
-    height: auto;
-}
-
 .searchBar,
 input,
 .notSearched,
@@ -108,6 +75,45 @@ input,
 .notSearched img {
     margin-top: 10vh;
 }
+.navbar,
+.searchBar,
+.notSearched,
+.searchDisplay {
+    height: fit-content;
+}
+
+.navbar, 
+.inputField label,
+.inputField{
+    padding-bottom: 75px;
+}
+
+/*Navbar*/
+
+.navbar {
+    padding-top: 5vh;
+}
+
+.page-title {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 6vw;
+}
+button {
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    margin-right: 2vw;
+}
+
+img {
+    width: 13%;
+    height: auto;
+}
+
 
 
 /*Input fields*/
@@ -156,20 +162,22 @@ input {
 
 .searchDisplay {
     background-color: rgba(104, 179, 245, 0.61);
-    margin: 2% 20%;
-    height: 90%;
+    margin: 5% auto;
     padding: .5% 2%;
     border-radius: 10px;
+    width: 50%;
+    display: flex;
 }
 
+.main-info {
+    margin: auto;
+}
 .temp {
-    top: 10%;
     font-size: 10vw;
 }
 
 .stats {
-    bottom: 70%;
-    left: 20%;
+    margin: auto;
 }
 
 .stats span {
@@ -187,8 +195,7 @@ input {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
     /*Repeating Styles*/
-    h1,
-    .stats {
+    h1{
         font-size: 20px;
     }
     .inputValue,
@@ -200,23 +207,31 @@ input {
     .notSearched img {
         margin-top: 30px;
     }
+    .stats, 
+    button {
+        font-size: initial;
+    }
+
     /* Navbar */
+    .navbar{
+        padding-bottom: 5vh;
+    }
     img {
         width: 20%;
     }
     button {
         width: 60px;
-        font-size: initial;
     }
     /*Input fields*/
+
+    .inputField label {
+        padding-bottom: 20px;
+    }
     .searchBar {
         height: 30vh;
     }
     label {
         font-size: 30px;
-    }
-    input {
-        margin-top: 3vh;
     }
     .inputValue {
         width: 200px;
@@ -234,21 +249,13 @@ input {
     }
     /*Searched*/
     .searchDisplay {
-        margin: 5% 5%;
-        height: 200px;
+        width: fit-content;
     }
     .city {
-        right: initial;
         font-size: 40px;
-        margin-bottom: 10px;
     }
     .temp {
-        right: 30%;
         font-size: 80px;
-    }
-    .stats {
-        bottom: 55%;
-        left: 25%;
     }
 }
 
@@ -257,20 +264,13 @@ input {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
     /*Searched*/
-    .searchDisplay {
-        margin: 5% 5%;
-        height: 95%;
+     .searchDisplay {
+        width: fit-content;
     }
     .city {
-        right: initial;
         font-size: 40px;
     }
     .temp {
-        right: 30%;
         font-size: 80px;
-    }
-    .stats {
-        left: 25%;
-        margin-top: 15px;
     }
 }
